@@ -1,4 +1,4 @@
-#### **Patient Condition Classification with BERT**
+### **Patient Condition Classification with BERT**
 
 **Table of Contents**
 1. Raw Data  
@@ -11,7 +11,7 @@
 
 ---
 
-### 1. Raw Data
+## 1. Raw Data
 This dataset is sourced from the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com). It includes patient reviews on specific drugs, associated conditions, and a 10-star rating reflecting overall patient satisfaction.
 
 **Dataset Characteristics:**
@@ -24,7 +24,7 @@ This dataset is sourced from the [UC Irvine Machine Learning Repository](https:/
 
 ---
 
-### 2. Data Demographics
+## 2. Data Demographics
 The Data Demographics Excel file provides a summary of the statistical and mathematical methods used to select the conditions and reviews for training the BERT model. It contains eight sheets, each showcasing a specific method for better evaluation and understanding:
 
 - **Sheet 01: Raw Data of Selected Features**  
@@ -53,12 +53,12 @@ The Data Demographics Excel file provides a summary of the statistical and mathe
 
 ---
 
-### 3. KNIME Data Retrieval Workflow
+## 3. KNIME Data Retrieval Workflow
 This KNIME workflow details the process of retrieving and refining data from the raw dataset. Conditions and drugs are selected through data demographics, and the refined data is used for training the BERT model for both binary and multi-class classification tasks.
 
 ---
 
-### 4. Condition Wise Data (Binary Classes and Multi Classes)
+## 4. Condition Wise Data (Binary Classes and Multi Classes)
 This folder contains datasets for patient condition classification, including binary and multi-class datasets. The data was processed using the KNIME workflow to create:
 
 **Binary-Class Conditions Datasets**
@@ -81,17 +81,17 @@ This folder contains datasets for patient condition classification, including bi
 
 ---
 
-### 5. Binary-Class Conditions (0 & 1)
+## 5. Binary-Class Conditions (0 & 1)
 This dataset includes refined data for binary classification of patient conditions. It was created from the "Condition Wise Data (Binary Classes)" retrieved after under-sampling.
 
 ---
 
-### 6. Multi-Class Conditions (0 to 11)
+## 6. Multi-Class Conditions (0 to 11)
 This dataset includes refined data for multi-class classification of patient conditions. It was created from the "Condition Wise Data (Multi Classes)" retrieved after under-sampling.
 
 ---
 
-### 7. BERT Model Python Code
+## 7. BERT Model Python Code
 This Google Colab Notebook (`.ipynb` file) contains the Python code for training the BERT model for both binary and multi-class classification tasks.
 
 **Binary Classification Code Execution:**
